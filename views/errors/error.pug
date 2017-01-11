@@ -1,0 +1,7 @@
+//extends ../layout/layout-web
+
+block content
+  h1 "에러 발생"
+  h1= message
+  h2= error.status
+  pre #{error.stack}
