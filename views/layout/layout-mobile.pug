@@ -1,0 +1,11 @@
+doctype html
+html
+	head
+		include ../partials/head-mobile
+		include ../partials/facebook
+		include ../partials/stylesheets-mobile
+	body
+		block content
+		input(type="hidden" name="infoMessage" value=messages())
+		include ../partials/javascripts-mobile
+		include ../partials/googleAnalytics
