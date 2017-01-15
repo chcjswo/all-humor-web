@@ -90,7 +90,7 @@ app.use(function(req, res) {
 if (app.get('env') === 'development') {
 	app.use(function(err, req, res, next) {
 		res.status(err.status || 500);
-		res.render('errors/errors', {
+		res.render('errors/error', {
 			message: err.message,
 			error: err
 		});
@@ -113,7 +113,7 @@ function errorHandler(err, req, res, next) {
     return next(err);
   }
   res.status(500);
-  res.render('errors/errors', { error: err });
+  res.render('errors/error', { error: err });
 }
 
 

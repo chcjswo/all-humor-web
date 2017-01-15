@@ -1,0 +1,11 @@
+doctype html
+html
+	head
+		include ../partials/head
+		include ../partials/facebook
+		include ../partials/stylesheets
+	body
+		block content
+		input(type="hidden" name="infoMessage" value=messages())
+		include ../partials/javascripts
+		//script(src='/js/common/googleAnalytics.js' type='text/javascript' charset='utf-8')
